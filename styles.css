@@ -166,6 +166,183 @@ button { font: inherit; }
 .flavor-info h3 { font-family: var(--serif); font-size: 40px; line-height: .88; font-weight: 600; margin: 17px 0 20px; }
 .flavor-info p { margin: 0; font-size: 12px; line-height: 1.75; color: #655b51; }
 
+
+/* MAIS SABORES — V3.1 */
+.more-flavors {
+  padding: 128px 0 138px;
+  background: var(--cream);
+  border-top: 1px solid rgba(13,11,9,.08);
+}
+.more-flavors-heading {
+  display: grid;
+  grid-template-columns: 58% 42%;
+  gap: 70px;
+  align-items: end;
+  margin-bottom: 74px;
+}
+.more-flavors-heading h2 {
+  font-family: var(--serif);
+  font-size: clamp(58px, 5vw, 86px);
+  line-height: .9;
+  font-weight: 500;
+  letter-spacing: -.035em;
+  margin: 24px 0 0;
+}
+.more-flavors-heading h2 em {
+  color: var(--gold);
+  font-weight: 400;
+}
+.more-flavors-intro {
+  max-width: 470px;
+  justify-self: end;
+}
+.more-flavors-intro p {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.58;
+  color: #5f554b;
+}
+.menu-group {
+  border-top: 1px solid rgba(13,11,9,.13);
+  padding-top: 26px;
+}
+.menu-group + .menu-group {
+  margin-top: 68px;
+}
+.menu-group-label {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  gap: 16px;
+  align-items: start;
+  margin-bottom: 30px;
+}
+.menu-group-label > span {
+  color: var(--terracotta);
+  font-family: var(--serif);
+  font-size: 14px;
+}
+.menu-group-label strong {
+  display: block;
+  font-family: var(--serif);
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 1;
+}
+.menu-group-label small {
+  display: block;
+  margin-top: 8px;
+  color: #8c8176;
+  font-size: 9px;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+.compact-menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  border-top: 1px solid rgba(13,11,9,.09);
+  border-left: 1px solid rgba(13,11,9,.09);
+}
+.compact-menu-grid-sweet {
+  grid-template-columns: repeat(3, minmax(0,1fr));
+}
+.compact-flavor {
+  position: relative;
+  min-height: 210px;
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 18px;
+  padding: 29px 30px 32px 26px;
+  border-right: 1px solid rgba(13,11,9,.09);
+  border-bottom: 1px solid rgba(13,11,9,.09);
+  background: rgba(255,255,255,.16);
+  transition: background .28s ease, transform .28s ease, box-shadow .28s ease;
+}
+.compact-flavor:hover {
+  background: rgba(255,255,255,.52);
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(52,40,28,.07);
+  z-index: 2;
+}
+.compact-number {
+  color: rgba(190,73,42,.72);
+  font-family: var(--serif);
+  font-size: 14px;
+  padding-top: 2px;
+}
+.compact-flavor small {
+  color: var(--terracotta);
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.compact-flavor h3 {
+  font-family: var(--serif);
+  font-size: 32px;
+  line-height: .96;
+  font-weight: 500;
+  margin: 14px 0 15px;
+  letter-spacing: -.02em;
+}
+.compact-flavor p {
+  margin: 0;
+  max-width: 430px;
+  color: #6c6258;
+  font-size: 11px;
+  line-height: 1.72;
+}
+.compact-featured {
+  background:
+    linear-gradient(135deg, rgba(210,173,112,.10), rgba(207,90,57,.045)),
+    rgba(255,255,255,.2);
+}
+.compact-featured::after {
+  content: "ASSINATURA";
+  position: absolute;
+  top: 26px;
+  right: 24px;
+  color: rgba(164,125,70,.33);
+  font-size: 7px;
+  letter-spacing: .25em;
+}
+.more-flavors-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 58px;
+  padding-top: 34px;
+  border-top: 1px solid rgba(13,11,9,.13);
+}
+.more-flavors-cta span,
+.more-flavors-cta strong {
+  display: block;
+}
+.more-flavors-cta span {
+  color: #8b7e71;
+  font-size: 9px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.more-flavors-cta strong {
+  margin-top: 9px;
+  font-family: var(--serif);
+  font-size: 20px;
+  font-weight: 500;
+  color: #332b25;
+}
+.btn-dark {
+  background: var(--dark);
+  color: var(--cream);
+  border-color: var(--dark);
+  white-space: nowrap;
+}
+.btn-dark:hover {
+  background: #251d18;
+  border-color: #251d18;
+}
+
+
 .home-line { padding: 155px 0; overflow: hidden; }
 .home-grid { display: grid; grid-template-columns: 54% 46%; align-items: center; gap: 80px; }
 .home-visual { min-height: 620px; position: relative; }
@@ -260,6 +437,9 @@ button { font: inherit; }
 .reveal-delay-3 { transition-delay: .24s; }
 
 @media (max-width: 1120px) {
+
+  .more-flavors-heading { grid-template-columns: 55% 45%; gap: 44px; }
+  .compact-flavor h3 { font-size: 29px; }
   .nav { gap: 16px; }
   .nav a { font-size: 9px; }
   .hero-grid { grid-template-columns: 52% 48%; gap: 20px; }
@@ -275,6 +455,14 @@ button { font: inherit; }
 }
 
 @media (max-width: 900px) {
+
+  .more-flavors { padding: 92px 0 100px; }
+  .more-flavors-heading { grid-template-columns: 1fr; gap: 32px; margin-bottom: 52px; }
+  .more-flavors-intro { justify-self: start; max-width: 620px; }
+  .compact-menu-grid,
+  .compact-menu-grid-sweet { grid-template-columns: 1fr; }
+  .compact-flavor { min-height: auto; }
+  .more-flavors-cta { align-items: flex-start; flex-direction: column; }
   .site-header { height: 72px; padding: 0 18px; background: rgba(13,11,9,.88); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); }
   .site-header.scrolled { height: 64px; }
   .brand { width: 138px; height: 66px; }
@@ -344,6 +532,16 @@ button { font: inherit; }
 }
 
 @media (max-width: 560px) {
+
+  .more-flavors { padding: 76px 0 82px; }
+  .more-flavors-heading h2 { font-size: 51px; }
+  .more-flavors-intro p { font-size: 18px; }
+  .menu-group-label { grid-template-columns: 38px 1fr; }
+  .menu-group-label strong { font-size: 28px; }
+  .compact-flavor { grid-template-columns: 31px 1fr; gap: 10px; padding: 24px 18px 26px 16px; }
+  .compact-flavor h3 { font-size: 28px; }
+  .compact-featured::after { display: none; }
+  .more-flavors-cta .btn { width: 100%; }
   .availability-note { grid-template-columns: 9px 1fr auto; padding: 12px; font-size: 9px; }
   .eyebrow { font-size: 9px; letter-spacing: .18em; }
   .hero-actions { flex-direction: column; align-items: stretch; }
