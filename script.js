@@ -35,3 +35,26 @@ const observer = new IntersectionObserver((entries) => {
 }, { threshold: 0.12, rootMargin: '0px 0px -40px' });
 
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+
+// V4: indica discretamente a seção ativa no menu principal.
+const sectionLinks = [...document.querySelectorAll('.nav a[href^="#"]')];
+const sectionTargets = sectionLinks
+  .map(link => ({ link, section: document.querySelector(link.getAttribute('href')) }))
+  .filter(item => item.section);
+
+const updateActiveSection = () => {
+  const y = window.scrollY + 150;
+  let current = sectionTargets[0];
+  sectionTargets.forEach(item => {
+    if (item.section.offsetTop <= y) current = item;
+  });
+  sectionLinks.forEach(link => {
+    const active = current && link === current.link;
+    link.classList.toggle('active', active);
+    if (active) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  });
+};
+updateActiveSection();
+window.addEventListener('scroll', updateActiveSection, { passive: true });
