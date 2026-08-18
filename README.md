@@ -1,19 +1,22 @@
-# Brasa Lenta — Site Institucional V2
+# Brasa Lenta — Site Institucional V3
 
-Site estático institucional da Brasa Lenta Pizzaria, pronto para Vercel.
+Versão refinada do site institucional da Brasa Lenta Pizzaria, pronta para publicação na Vercel.
 
-## Arquivos principais
-- `index.html` — conteúdo e estrutura
-- `styles.css` — identidade visual e responsividade
-- `script.js` — menu mobile e animações
-- `vercel.json` — configuração de deploy
-- `assets/` — imagens e logos
+## Alterações da V3
+- logo com mais presença no cabeçalho;
+- header mais fino, translúcido e com blur;
+- primeira dobra com hierarquia e texto refinados;
+- espaçamentos verticais reduzidos;
+- diferencial “Assada na brasa”;
+- Brasa em Casa conectado diretamente ao Supermercado Bom Bife;
+- texto da área de parceiros e eventos mais humano;
+- revisão responsiva para tablet e celular.
 
-## Contatos configurados
+## Contatos
 - WhatsApp: (16) 99606-1375
 - Cardápio digital: https://pedido.brendi.com.br/brasalentapizzaria
 - Instagram: @brasalentapizzaria
-- Brasa em Casa: disponível no Supermercado Bom Bife, Matão/SP
+- Ponto de venda da linha Brasa em Casa: Supermercado Bom Bife — Matão/SP
 
-## Atualizar na Vercel
-O projeto está ligado ao GitHub. Basta substituir os arquivos no repositório e fazer um novo commit. A Vercel fará o novo deploy automaticamente.
+## Publicação
+Substitua os arquivos do repositório atual por estes e faça um novo commit. A Vercel publicará a atualização automaticamente.
