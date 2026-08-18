@@ -4,27 +4,47 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#0d0b09" />
-  <meta name="description" content="Brasa Lenta Pizzaria, em Matão/SP. Pizzas artesanais feitas com tempo, massa de longa fermentação, farinha italiana, molho San Marzano e ingredientes selecionados." />
+  <meta name="description" content="Brasa Lenta Pizzaria em Matão/SP. Pizzas artesanais feitas com tempo: massa de longa fermentação de 48 horas, farinha italiana, molho San Marzano e ingredientes selecionados." />
+  <meta name="robots" content="index,follow,max-image-preview:large" />
+  <link rel="canonical" href="https://brasa-lenta-site.vercel.app/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Brasa Lenta | O calor que aproxima" />
+  <meta property="og:description" content="Pizzas artesanais em Matão/SP. Feito com tempo. Assado na brasa." />
+  <meta property="og:url" content="https://brasa-lenta-site.vercel.app/" />
+  <meta property="og:image" content="https://brasa-lenta-site.vercel.app/assets/og-brasa-lenta.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
   <title>Brasa Lenta | Pizzas Artesanais em Matão/SP</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" type="image/png" href="assets/logo-emblema.png" />
+  <link rel="icon" type="image/png" href="assets/logo-gold.png" />
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
     "name": "Brasa Lenta Pizzaria",
+    "url": "https://brasa-lenta-site.vercel.app/",
+    "telephone": "+55 16 99606-1375",
     "servesCuisine": "Pizza artesanal",
     "areaServed": "Matão, SP",
+    "hasMenu": "https://pedido.brendi.com.br/brasalentapizzaria",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Matão",
       "addressRegion": "SP",
       "addressCountry": "BR"
     },
-    "sameAs": ["https://www.instagram.com/brasalentapizzaria/"]
+    "sameAs": [
+      "https://www.instagram.com/brasalentapizzaria/"
+    ]
   }
   </script>
 </head>
@@ -33,7 +53,7 @@
 
   <header class="site-header" id="topo">
     <a href="#topo" class="brand" aria-label="Brasa Lenta - início">
-      <img src="assets/logo-horizontal.png" alt="Brasa Lenta Pizzaria" />
+      <img src="assets/logo-gold.png" alt="Brasa Lenta Pizzas Artesanais" />
     </a>
 
     <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
@@ -42,10 +62,11 @@
 
     <nav class="nav" aria-label="Navegação principal">
       <a href="#essencia">Nossa essência</a>
-      <a href="#diferenciais">O que nos move</a>
+      <a href="#diferenciais">Processo</a>
       <a href="#sabores">Sabores</a>
       <a href="#em-casa">Brasa em casa</a>
-      <a href="#contato" class="nav-cta">Fale com a Brasa</a>
+      <a href="#onde-encontrar">Onde encontrar</a>
+      <a class="nav-cta" href="https://pedido.brendi.com.br/brasalentapizzaria" target="_blank" rel="noopener">Cardápio digital</a>
     </nav>
   </header>
 
@@ -53,25 +74,29 @@
     <section class="hero section-dark">
       <div class="hero-fire hero-fire-1"></div>
       <div class="hero-fire hero-fire-2"></div>
+
       <div class="container hero-grid">
         <div class="hero-copy reveal">
           <div class="eyebrow"><span></span> Matão/SP · Desde 2024</div>
           <h1>O calor<br><em>que aproxima.</em></h1>
           <p class="hero-lead">Não fazemos massa apenas para vender pizza. Fazemos para que alguém tenha uma noite melhor.</p>
+
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#sabores">Conheça a Brasa</a>
-            <a class="btn btn-ghost" href="https://www.instagram.com/brasalentapizzaria/" target="_blank" rel="noopener">Instagram</a>
+            <a class="btn btn-primary" href="https://pedido.brendi.com.br/brasalentapizzaria" target="_blank" rel="noopener">Ver cardápio digital</a>
+            <a class="btn btn-ghost" href="https://wa.me/5516996061375?text=Ol%C3%A1%2C%20Brasa%20Lenta!" target="_blank" rel="noopener">Falar no WhatsApp</a>
           </div>
+
+          <a class="hero-instagram" href="https://www.instagram.com/brasalentapizzaria/" target="_blank" rel="noopener">@brasalentapizzaria <span>↗</span></a>
           <div class="hero-note">AQUECE A CASA. CONFORTA O CORAÇÃO.</div>
         </div>
 
         <div class="hero-visual reveal reveal-delay">
           <div class="hero-image-wrap">
-            <img src="assets/hero-pizza.png" alt="Pizza artesanal Brasa Lenta saindo do forno" />
+            <img src="assets/hero-pizza.webp" alt="Pizza artesanal Brasa Lenta saindo do forno" width="1122" height="1402" />
           </div>
           <div class="hero-seal">
             <span>48H</span>
-            <small>de fermentação</small>
+            <small>longa fermentação</small>
           </div>
           <div class="hero-caption">
             <span>FEITO COM TEMPO.</span>
@@ -79,6 +104,7 @@
           </div>
         </div>
       </div>
+
       <a class="scroll-hint" href="#essencia" aria-label="Rolar para próxima seção"><span></span> descobrir</a>
     </section>
 
@@ -107,25 +133,25 @@
         <div class="feature-grid">
           <article class="feature reveal">
             <div class="feature-number">01</div>
-            <div class="icon icon-clock"></div>
+            <div class="icon icon-clock" aria-hidden="true"></div>
             <h3>48 horas</h3>
             <p>Massa de longa fermentação para uma textura leve, aerada e cheia de personalidade.</p>
           </article>
           <article class="feature reveal reveal-delay-1">
             <div class="feature-number">02</div>
-            <div class="icon icon-wheat"></div>
+            <div class="icon icon-wheat" aria-hidden="true"></div>
             <h3>Farinha italiana</h3>
             <p>Matéria-prima escolhida para sustentar o estilo de massa que define a experiência Brasa Lenta.</p>
           </article>
           <article class="feature reveal reveal-delay-2">
             <div class="feature-number">03</div>
-            <div class="icon icon-tomato"></div>
+            <div class="icon icon-tomato" aria-hidden="true"></div>
             <h3>San Marzano</h3>
             <p>Molho de tomate com sabor vivo, equilibrado e presente sem esconder o restante da pizza.</p>
           </article>
           <article class="feature reveal reveal-delay-3">
             <div class="feature-number">04</div>
-            <div class="icon icon-fire"></div>
+            <div class="icon icon-fire" aria-hidden="true"></div>
             <h3>Brasa & fogo</h3>
             <p>Calor alto, borda marcada e o cuidado de entregar cada pizza no ponto que a Brasa acredita.</p>
           </article>
@@ -149,12 +175,17 @@
             <div class="eyebrow"><span></span> Sabores assinatura</div>
             <h2>Clássicos com<br><em>identidade Brasa.</em></h2>
           </div>
-          <p>Uma seleção que apresenta o jeito Brasa Lenta de fazer pizza: massa protagonista, ingredientes reconhecíveis e equilíbrio em cada cobertura.</p>
+          <div class="flavors-intro">
+            <p>Uma seleção que apresenta o jeito Brasa Lenta de fazer pizza: massa protagonista, ingredientes reconhecíveis e equilíbrio em cada cobertura.</p>
+            <a class="text-link dark-link" href="https://pedido.brendi.com.br/brasalentapizzaria" target="_blank" rel="noopener">Ver cardápio completo <span>→</span></a>
+          </div>
         </div>
 
         <div class="flavor-grid">
           <article class="flavor-card reveal">
-            <div class="flavor-image"><img src="assets/margherita.png" alt="Pizza Margherita San Marzano" loading="lazy"></div>
+            <div class="flavor-image">
+              <img src="assets/margherita.webp" alt="Pizza Margherita San Marzano" loading="lazy" width="1000" height="1000" />
+            </div>
             <div class="flavor-info">
               <span>01 · CLÁSSICA</span>
               <h3>Margherita<br>San Marzano</h3>
@@ -163,7 +194,9 @@
           </article>
 
           <article class="flavor-card flavor-offset reveal reveal-delay-1">
-            <div class="flavor-image"><img src="assets/calabresa.png" alt="Pizza Calabresa na Brasa" loading="lazy"></div>
+            <div class="flavor-image">
+              <img src="assets/calabresa.webp" alt="Pizza Calabresa na Brasa" loading="lazy" width="1000" height="1000" />
+            </div>
             <div class="flavor-info">
               <span>02 · BRASA</span>
               <h3>Calabresa<br>na Brasa</h3>
@@ -172,7 +205,9 @@
           </article>
 
           <article class="flavor-card reveal reveal-delay-2">
-            <div class="flavor-image"><img src="assets/quattro-formaggi.png" alt="Pizza Quattro Formaggi" loading="lazy"></div>
+            <div class="flavor-image">
+              <img src="assets/quattro-formaggi.webp" alt="Pizza Quattro Formaggi" loading="lazy" width="800" height="1000" />
+            </div>
             <div class="flavor-info">
               <span>03 · INTENSA</span>
               <h3>Quattro<br>Formaggi</h3>
@@ -186,14 +221,15 @@
     <section class="home-line section-dark" id="em-casa">
       <div class="container home-grid">
         <div class="home-visual reveal">
-          <div class="pack-card pack-card-back">
-            <div class="mini-brand">B<span>🔥</span></div>
-            <strong>BRASA LENTA</strong>
-            <small>PIZZAS ARTESANAIS</small>
+          <div class="product-frame product-frame-back" aria-hidden="true">
+            <span>PRÉ-ASSADA</span>
+            <strong>BRASA<br>EM CASA</strong>
+            <small>PRATICIDADE SEM ABRIR MÃO DO PROCESSO</small>
           </div>
-          <div class="pack-card pack-card-front">
-            <img src="assets/logo-emblema.png" alt="Identidade Brasa Lenta" loading="lazy">
-          </div>
+          <figure class="product-photo">
+            <img src="assets/brasa-em-casa.webp" alt="Pizzas Brasa Lenta embaladas para finalizar em casa" loading="lazy" width="900" height="1100" />
+            <figcaption>LINHA ARTESANAL · 28 CM</figcaption>
+          </figure>
         </div>
 
         <div class="home-copy reveal reveal-delay">
@@ -202,12 +238,36 @@
           <p>Uma linha artesanal pré-assada, pensada para levar a identidade da Brasa Lenta para outros momentos da rotina — com praticidade, mas sem abrir mão do cuidado no processo.</p>
           <div class="stats">
             <div><strong>28 cm</strong><span>formato da linha</span></div>
-            <div><strong>48 h</strong><span>fermentação</span></div>
+            <div><strong>48 h</strong><span>longa fermentação</span></div>
             <div><strong>4–6 min</strong><span>finalização em casa*</span></div>
           </div>
-          <small class="fineprint">*Tempo de referência para forno doméstico, conforme linha e instruções do rótulo.</small>
-          <a href="#contato" class="text-link">Quero saber onde encontrar <span>→</span></a>
+          <small class="fineprint">*Tempo de referência para forno doméstico. Siga sempre as instruções do rótulo.</small>
+          <a href="#onde-encontrar" class="text-link">Onde encontrar <span>→</span></a>
         </div>
+      </div>
+    </section>
+
+    <section class="stockist" id="onde-encontrar">
+      <div class="container stockist-grid">
+        <div class="stockist-copy reveal">
+          <div class="eyebrow"><span></span> Onde encontrar</div>
+          <h2>A Brasa mais perto<br><em>da sua casa.</em></h2>
+          <p>Além do cardápio digital, a linha Brasa em Casa está disponível em um ponto parceiro selecionado em Matão.</p>
+        </div>
+
+        <article class="stockist-card reveal reveal-delay">
+          <div class="stockist-index">01</div>
+          <div class="stockist-content">
+            <span>PONTO DE VENDA CONFIRMADO</span>
+            <h3>Supermercado<br>Bom Bife</h3>
+            <p>Rua Sinharinha Frota, 928<br>Nova Matão · Matão/SP</p>
+            <div class="stockist-actions">
+              <a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Supermercado+Bom+Bife+Rua+Sinharinha+Frota+928+Matao+SP" target="_blank" rel="noopener">Como chegar</a>
+              <a class="text-link dark-link" href="https://pedido.brendi.com.br/brasalentapizzaria" target="_blank" rel="noopener">Prefere pedir agora? <span>→</span></a>
+            </div>
+          </div>
+          <div class="stockist-stamp">MATÃO<br><strong>SP</strong></div>
+        </article>
       </div>
     </section>
 
@@ -217,6 +277,7 @@
           <div class="eyebrow"><span></span> A Brasa além da pizzaria</div>
           <h2>Para parceiros,<br>eventos e bons encontros.</h2>
           <p>A Brasa Lenta também desenvolve experiências e formatos para pontos parceiros, encontros especiais e negócios que compartilham a mesma atenção à qualidade.</p>
+          <a class="text-link dark-link" href="https://wa.me/5516996061375?text=Ol%C3%A1%2C%20Brasa%20Lenta!%20Quero%20conversar%20sobre%20uma%20parceria%20ou%20evento." target="_blank" rel="noopener">Conversar sobre parceria <span>→</span></a>
         </div>
         <div class="partner-cards reveal reveal-delay">
           <article>
@@ -238,28 +299,54 @@
       </div>
     </section>
 
-    <section class="closing section-dark" id="contato">
-      <div class="closing-glow"></div>
-      <div class="container closing-content reveal">
-        <img src="assets/logo-emblema.png" alt="Brasa Lenta Pizzas Artesanais" class="closing-logo">
-        <div class="eyebrow"><span></span> Matão/SP <span></span></div>
-        <h2>Algumas conversas só acontecem<br><em>quando todo mundo senta na mesma mesa.</em></h2>
-        <p>Acompanhe as fornadas, novidades e os bastidores da Brasa Lenta.</p>
-        <a class="btn btn-primary" href="https://www.instagram.com/brasalentapizzaria/" target="_blank" rel="noopener">@brasalentapizzaria</a>
+    <section class="contact section-dark" id="contato">
+      <div class="contact-glow"></div>
+      <div class="container contact-grid">
+        <div class="contact-copy reveal">
+          <div class="eyebrow"><span></span> A noite começa aqui</div>
+          <h2>Algumas conversas só acontecem<br><em>quando todo mundo senta na mesma mesa.</em></h2>
+          <p>Escolha sua pizza, acompanhe as fornadas ou fale diretamente com a Brasa.</p>
+        </div>
+
+        <div class="contact-actions reveal reveal-delay">
+          <a class="contact-card featured" href="https://pedido.brendi.com.br/brasalentapizzaria" target="_blank" rel="noopener">
+            <span>01</span>
+            <small>PEDIDOS</small>
+            <strong>Cardápio digital</strong>
+            <em>Abrir cardápio ↗</em>
+          </a>
+          <a class="contact-card" href="https://wa.me/5516996061375?text=Ol%C3%A1%2C%20Brasa%20Lenta!" target="_blank" rel="noopener">
+            <span>02</span>
+            <small>ATENDIMENTO</small>
+            <strong>WhatsApp</strong>
+            <em>(16) 99606-1375 ↗</em>
+          </a>
+          <a class="contact-card" href="https://www.instagram.com/brasalentapizzaria/" target="_blank" rel="noopener">
+            <span>03</span>
+            <small>BASTIDORES</small>
+            <strong>Instagram</strong>
+            <em>@brasalentapizzaria ↗</em>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container footer-grid">
-      <div>
-        <strong>BRASA LENTA</strong>
-        <span>PIZZAS ARTESANAIS</span>
+      <div class="footer-brand">
+        <img src="assets/logo-gold.png" alt="" aria-hidden="true" />
+        <div><strong>BRASA LENTA</strong><span>PIZZAS ARTESANAIS</span></div>
       </div>
       <p>Feito com tempo. Assado na brasa.</p>
       <p>Matão/SP · Desde 2024</p>
     </div>
   </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/5516996061375?text=Ol%C3%A1%2C%20Brasa%20Lenta!" target="_blank" rel="noopener" aria-label="Falar com a Brasa Lenta pelo WhatsApp">
+    <span aria-hidden="true">✆</span>
+    <small>WhatsApp</small>
+  </a>
 
   <script src="script.js"></script>
 </body>

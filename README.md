@@ -1,26 +1,19 @@
-# Brasa Lenta — Site Institucional
+# Brasa Lenta — Site Institucional V2
 
-Site estático em HTML, CSS e JavaScript, pronto para publicação na Vercel.
+Site estático institucional da Brasa Lenta Pizzaria, pronto para Vercel.
 
-## Publicar na Vercel
-1. Envie esta pasta para um repositório no GitHub.
-2. Na Vercel, clique em **Add New → Project**.
-3. Importe o repositório.
-4. Framework Preset: **Other**.
-5. Build Command: deixe vazio.
-6. Output Directory: deixe vazio.
-7. Clique em **Deploy**.
+## Arquivos principais
+- `index.html` — conteúdo e estrutura
+- `styles.css` — identidade visual e responsividade
+- `script.js` — menu mobile e animações
+- `vercel.json` — configuração de deploy
+- `assets/` — imagens e logos
 
-Também é possível publicar usando Vercel Drop ou a CLI (`vercel --prod`).
+## Contatos configurados
+- WhatsApp: (16) 99606-1375
+- Cardápio digital: https://pedido.brendi.com.br/brasalentapizzaria
+- Instagram: @brasalentapizzaria
+- Brasa em Casa: disponível no Supermercado Bom Bife, Matão/SP
 
-## Estrutura
-- `index.html` — conteúdo e SEO
-- `styles.css` — identidade visual responsiva
-- `script.js` — menu e animações
-- `assets/` — logotipos e fotografias
-- `vercel.json` — configuração básica
-
-## Antes da publicação definitiva
-- Substituir/confirmar links de pedido ou WhatsApp, caso desejado.
-- Adicionar endereço/horário quando houver informação oficial a exibir.
-- Conectar domínio próprio em Settings → Domains na Vercel.
+## Atualizar na Vercel
+O projeto está ligado ao GitHub. Basta substituir os arquivos no repositório e fazer um novo commit. A Vercel fará o novo deploy automaticamente.
