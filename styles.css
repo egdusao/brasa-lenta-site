@@ -782,3 +782,210 @@ button { font: inherit; }
   .footer-wordmark { width: 190px; }
   .whatsapp-float .wa-icon, .whatsapp-float .wa-icon svg { width: 20px; height: 20px; }
 }
+
+
+/* ==========================================================
+   V4.1 FINAL — ACABAMENTO
+   ========================================================== */
+
+/* 1. Marca mais presente no header sem aumentar sua altura */
+.brand {
+  width: 360px;
+  height: 66px;
+}
+.brand img {
+  width: 334px;
+  max-height: 61px;
+}
+.site-header.scrolled .brand img {
+  width: 292px;
+  max-height: 53px;
+}
+
+/* Mantém o conjunto do menu equilibrado mesmo com a marca maior */
+.site-header {
+  padding-left: 2.65vw;
+  padding-right: 2.65vw;
+}
+
+/* 2. Foco acessível, mas integrado à identidade visual */
+a:focus,
+button:focus {
+  outline: none;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 1px solid rgba(210, 173, 112, .92);
+  outline-offset: 5px;
+  box-shadow: 0 0 0 3px rgba(210, 173, 112, .08);
+}
+.text-link:focus-visible,
+.btn:focus-visible,
+.nav a:focus-visible,
+.contact-card:focus-visible,
+.signature-card:focus-visible {
+  border-radius: 1px;
+}
+
+/* 3. Toscana recebe um protagonismo muito sutil */
+.signature-card-main {
+  transform: translateY(-18px) scale(1.018);
+  z-index: 2;
+  box-shadow: 0 24px 60px rgba(54,42,30,.12);
+}
+.signature-card-main:hover {
+  transform: translateY(-20px) scale(1.025);
+}
+
+/* 4. Última pizza salgada fecha a grade inteira */
+.compact-flavor-wide {
+  grid-column: 1 / -1;
+  min-height: 168px;
+  overflow: hidden;
+  background:
+    linear-gradient(100deg, rgba(255,255,255,.28), rgba(210,173,112,.055)),
+    rgba(255,255,255,.13);
+}
+.compact-flavor-wide > div {
+  max-width: 610px;
+  position: relative;
+  z-index: 2;
+}
+.compact-flavor-wide::after {
+  content: "13";
+  position: absolute;
+  right: 60px;
+  top: 50%;
+  transform: translateY(-53%);
+  font-family: var(--serif);
+  font-size: 118px;
+  line-height: 1;
+  font-weight: 500;
+  color: rgba(164,125,70,.075);
+  pointer-events: none;
+}
+
+/* 5. Fechamento emocional: a cena agora é percebida sem competir com o texto */
+.contact::before {
+  width: 56%;
+  opacity: .48;
+  filter: saturate(.82) contrast(1.03) brightness(1.04);
+}
+.contact::after {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(13,11,9,.20) 0%,
+      rgba(13,11,9,.42) 27%,
+      rgba(13,11,9,.68) 43%,
+      rgba(13,11,9,.94) 61%,
+      #0d0b09 100%
+    );
+}
+
+/* 6. Corrige a regra antiga que limitava a logo do rodapé a 42px */
+.footer-brand {
+  min-width: 245px;
+}
+.footer-brand img.footer-wordmark {
+  width: 210px;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+  opacity: .94;
+}
+.footer {
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+
+/* Pequeno acabamento no card de ponto de venda */
+.stockist-card {
+  transition: box-shadow .3s ease, transform .3s ease;
+}
+.stockist-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 26px 58px rgba(57,43,29,.105);
+}
+
+/* A lista textual fica um pouco mais elegante após a vitrine fotográfica */
+.compact-menu-grid {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.16);
+}
+
+/* Tablet */
+@media (max-width: 1120px) {
+  .brand { width: 275px; }
+  .brand img { width: 258px; max-height: 55px; }
+  .site-header.scrolled .brand img { width: 226px; max-height: 48px; }
+
+  .compact-flavor-wide::after {
+    right: 38px;
+    font-size: 96px;
+  }
+}
+
+/* Mobile / menu hambúrguer */
+@media (max-width: 900px) {
+  .brand { width: 185px; height: 58px; }
+  .brand img,
+  .site-header.scrolled .brand img {
+    width: 174px;
+    max-height: 50px;
+  }
+
+  .signature-card-main,
+  .signature-card-main:hover {
+    transform: none;
+  }
+
+  .compact-flavor-wide {
+    grid-column: auto;
+  }
+  .compact-flavor-wide::after {
+    right: 22px;
+    font-size: 78px;
+  }
+
+  .contact::before {
+    width: 100%;
+    opacity: .29;
+  }
+  .contact::after {
+    background:
+      linear-gradient(
+        180deg,
+        rgba(13,11,9,.42) 0%,
+        rgba(13,11,9,.67) 42%,
+        rgba(13,11,9,.94) 72%,
+        #0d0b09 100%
+      );
+  }
+
+  .footer-brand img.footer-wordmark {
+    width: 205px;
+  }
+}
+
+@media (max-width: 560px) {
+  .brand { width: 158px; }
+  .brand img,
+  .site-header.scrolled .brand img {
+    width: 150px;
+    max-height: 46px;
+  }
+
+  .compact-flavor-wide::after {
+    font-size: 62px;
+    right: 16px;
+    opacity: .7;
+  }
+
+  .contact::before {
+    opacity: .24;
+  }
+
+  .footer-brand img.footer-wordmark {
+    width: 190px;
+  }
+}

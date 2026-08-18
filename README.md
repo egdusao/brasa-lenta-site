@@ -1,18 +1,25 @@
-# Brasa Lenta — Site Institucional V4
+# Brasa Lenta — Site Institucional V4.1 Final
 
-Versão de refinamento premium do site institucional.
+Versão final de acabamento do site institucional da Brasa Lenta.
 
-## Principais melhorias da V4
-- wordmark horizontal no cabeçalho para dar mais presença à marca;
-- favicon simplificado;
-- vitrine visual com três pizzas assinatura: Brasa Fumê, Toscana di Parma e 48 Horas;
-- lista de demais sabores mais compacta;
-- fechamento emocional com fotografia lifestyle;
-- WhatsApp flutuante reconhecível, mantendo a paleta da marca;
-- estado ativo discreto no menu durante a navegação;
-- refinamento do CTA “Como chegar”;
-- rodapé com assinatura horizontal da marca;
-- revisão responsiva para desktop, tablet e celular.
+## Ajustes finais
+- logo do cabeçalho com aproximadamente 24% mais presença;
+- indicador de seção ativa corrigido: “Onde encontrar” não permanece ativo em Parceiros/Contato;
+- última pizza salgada ocupa a largura total da grade, eliminando o vazio visual;
+- copy de “Mais sabores” reescrita em linguagem de marca;
+- Toscana di Parma recebe protagonismo visual sutil;
+- fotografia lifestyle do fechamento mais presente;
+- logo do rodapé corrigida e ampliada;
+- estados de foco do navegador substituídos por acabamento dourado acessível;
+- microinteração discreta no card do Supermercado Bom Bife;
+- responsividade preservada em desktop, tablet e mobile.
+
+## Dados configurados
+- WhatsApp: (16) 99606-1375
+- Cardápio digital: https://pedido.brendi.com.br/brasalentapizzaria
+- Instagram: @brasalentapizzaria
+- Brasa em Casa: Supermercado Bom Bife — Matão/SP
 
 ## Publicação
-Envie o conteúdo desta pasta para o mesmo repositório GitHub e faça um novo commit. A Vercel publicará automaticamente.
+Envie o conteúdo desta pasta para o mesmo repositório GitHub e faça um novo commit.
+A Vercel publicará automaticamente no projeto já existente.
