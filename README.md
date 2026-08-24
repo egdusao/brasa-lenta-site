@@ -1,4 +1,4 @@
-# Brasa Lenta — Site Institucional V4.1 Final
+# Brasa Lenta — Site Institucional V4.2 · Rede de Parceiros
 
 Versão final de acabamento do site institucional da Brasa Lenta.
 
@@ -23,3 +23,17 @@ Versão final de acabamento do site institucional da Brasa Lenta.
 ## Publicação
 Envie o conteúdo desta pasta para o mesmo repositório GitHub e faça um novo commit.
 A Vercel publicará automaticamente no projeto já existente.
+
+
+## Atualização V4.2 — Rede de parceiros
+A seção **Onde encontrar** foi redesenhada para comunicar a expansão da Brasa em Matão.
+
+Pontos exibidos:
+- Supermercado Bom Bife
+- Supermercado Mortari
+- Mercearia Santa Catarina
+- Empório Santo Ivo
+- Gourmet Express
+
+A seção Brasa em Casa agora informa que a linha está disponível em **5 pontos parceiros em Matão**.
+A área B2B também passou a usar essa presença como prova real de expansão da marca.

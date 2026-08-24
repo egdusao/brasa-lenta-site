@@ -989,3 +989,325 @@ button:focus-visible {
     width: 190px;
   }
 }
+
+
+/* ==========================================================
+   V4.2 — REDE DE PARCEIROS
+   ========================================================== */
+
+.stockist-network {
+  padding: 132px 0 140px;
+  background:
+    radial-gradient(circle at 85% 15%, rgba(210,173,112,.10), transparent 26%),
+    #e8ded0;
+}
+
+.stockist-network .container {
+  position: relative;
+}
+
+.stockist-network-head {
+  display: grid;
+  grid-template-columns: 53% 47%;
+  gap: 76px;
+  align-items: end;
+  margin-bottom: 70px;
+}
+
+.stockist-network h2 {
+  margin: 25px 0 0;
+  font-size: clamp(58px, 5.2vw, 88px);
+  line-height: .87;
+  letter-spacing: -.04em;
+}
+
+.stockist-network-intro {
+  max-width: 560px;
+  justify-self: end;
+  padding-bottom: 5px;
+}
+
+.stockist-network-intro > p {
+  margin: 25px 0 0;
+  max-width: 540px;
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.62;
+  color: #5f554b;
+}
+
+.network-count {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid rgba(13,11,9,.13);
+}
+
+.network-count strong {
+  font-family: var(--serif);
+  font-size: 55px;
+  line-height: .8;
+  font-weight: 500;
+  color: var(--terracotta);
+}
+
+.network-count span {
+  color: #796d61;
+  font-size: 9px;
+  line-height: 1.5;
+  letter-spacing: .17em;
+  text-transform: uppercase;
+}
+
+.partner-location-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 1px;
+  background: rgba(13,11,9,.11);
+  border: 1px solid rgba(13,11,9,.11);
+  box-shadow: 0 24px 65px rgba(65,48,33,.07);
+}
+
+.partner-location-card {
+  grid-column: span 2;
+  position: relative;
+  min-height: 320px;
+  padding: 32px 32px 30px;
+  display: flex;
+  flex-direction: column;
+  background: rgba(246,239,229,.90);
+  overflow: hidden;
+  transition: background .3s ease, transform .3s ease, box-shadow .3s ease;
+}
+
+.partner-location-wide {
+  grid-column: span 3;
+  min-height: 290px;
+}
+
+.partner-location-card::before {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 210px;
+  border: 1px solid rgba(185,76,45,.075);
+  border-radius: 50%;
+  right: -105px;
+  bottom: -115px;
+  transition: transform .5s ease, border-color .3s ease;
+}
+
+.partner-location-card:hover {
+  z-index: 2;
+  background: #f7f0e6;
+  transform: translateY(-3px);
+  box-shadow: 0 22px 45px rgba(61,45,31,.10);
+}
+
+.partner-location-card:hover::before {
+  transform: scale(1.14);
+  border-color: rgba(185,76,45,.14);
+}
+
+.partner-location-accent {
+  background:
+    linear-gradient(135deg, rgba(210,173,112,.11), rgba(185,76,45,.035)),
+    rgba(246,239,229,.94);
+}
+
+.partner-location-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.partner-location-index {
+  font-family: var(--serif);
+  font-size: 18px;
+  color: var(--terracotta);
+}
+
+.partner-location-top small {
+  color: #8d8073;
+  font-size: 7px;
+  font-weight: 700;
+  letter-spacing: .20em;
+}
+
+.partner-location-card h3 {
+  margin: 44px 0 20px;
+  max-width: 90%;
+  font-family: var(--serif);
+  font-size: clamp(34px, 3vw, 47px);
+  line-height: .90;
+  font-weight: 550;
+  letter-spacing: -.025em;
+}
+
+.partner-location-card p {
+  margin: 0;
+  color: #74695e;
+  font-size: 11px;
+  letter-spacing: .02em;
+}
+
+.partner-location-card > a {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  align-self: flex-start;
+  margin-top: auto;
+  padding-top: 27px;
+  color: #17120e;
+  border-bottom: 1px solid rgba(13,11,9,.22);
+  padding-bottom: 7px;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  transition: color .25s ease, border-color .25s ease, gap .25s ease;
+}
+
+.partner-location-card > a span {
+  color: var(--terracotta);
+}
+
+.partner-location-card > a:hover {
+  color: var(--terracotta);
+  border-color: rgba(185,76,45,.45);
+  gap: 14px;
+}
+
+.stockist-network-foot {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 36px;
+  margin-top: 34px;
+  padding-top: 27px;
+  border-top: 1px solid rgba(13,11,9,.13);
+}
+
+.stockist-network-foot span {
+  color: #8d8073;
+  font-size: 8px;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+
+.stockist-network-foot strong {
+  max-width: 570px;
+  font-family: var(--serif);
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 500;
+  color: #3f352c;
+  text-align: right;
+}
+
+/* O bloco Brasa em Casa passa a sinalizar uma rede, não exclusividade */
+.availability-note strong::after {
+  content: " · 5 pontos";
+  color: rgba(241,234,223,.48);
+  font-weight: 400;
+}
+
+/* Responsividade */
+@media (max-width: 1120px) {
+  .stockist-network-head {
+    grid-template-columns: 50% 50%;
+    gap: 48px;
+  }
+
+  .partner-location-card {
+    padding: 28px 27px;
+  }
+
+  .partner-location-card h3 {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 900px) {
+  .stockist-network {
+    padding: 94px 0 100px;
+  }
+
+  .stockist-network-head {
+    grid-template-columns: 1fr;
+    gap: 38px;
+    margin-bottom: 50px;
+  }
+
+  .stockist-network-intro {
+    justify-self: start;
+    max-width: 650px;
+  }
+
+  .partner-location-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .partner-location-card,
+  .partner-location-wide {
+    grid-column: span 1;
+    min-height: 280px;
+  }
+
+  .partner-location-card:last-child {
+    grid-column: 1 / -1;
+    min-height: 245px;
+  }
+
+  .stockist-network-foot {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .stockist-network-foot strong {
+    text-align: left;
+  }
+}
+
+@media (max-width: 560px) {
+  .stockist-network {
+    padding: 78px 0 82px;
+  }
+
+  .stockist-network h2 {
+    font-size: 54px;
+  }
+
+  .network-count strong {
+    font-size: 48px;
+  }
+
+  .stockist-network-intro > p {
+    font-size: 18px;
+  }
+
+  .partner-location-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partner-location-card,
+  .partner-location-wide,
+  .partner-location-card:last-child {
+    grid-column: 1;
+    min-height: 245px;
+    padding: 25px 23px;
+  }
+
+  .partner-location-card h3 {
+    margin-top: 35px;
+    font-size: 37px;
+  }
+
+  .stockist-network-foot strong {
+    font-size: 18px;
+  }
+}
